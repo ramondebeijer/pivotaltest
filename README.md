@@ -26,4 +26,4 @@ To view the applicaiton, open a browser and navigate to http://localhost:8080
 cf push hello-world -p target/hello-world-0.0.1-SNAPSHOT.jar
 ```
 
-To view the application, open a browser and navigate to the URL specified after pushing the application. This should look something like hello-world.<app domain>
+To view the application, open a browser and navigate to the URL specified after pushing the application. This should look something like hello-world.sys.example.com
