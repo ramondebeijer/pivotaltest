@@ -17,17 +17,17 @@ public class HelloWorldController {
 	@ResponseBody
 	public String helloWorld()
 	{
-		return "Hello World from Spring Boot. The current time is " + convertCalendarToDateString(Calendar.getInstance());
+		return "Hello World from Spring Boot. The current time is " + convertCalendarToDateTimeString(Calendar.getInstance());
 	}
 	
-	private static String convertCalendarToDateString(Calendar date)
+	private static String convertCalendarToDateTimeString(Calendar date)
 	{
 		if (date == null)
 			return null;
 		
 		Date theDate = date.getTime();
 		
-		SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy");
+		SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy hh:mm:ss");
 		return sdf.format(theDate);
 	}
 }
